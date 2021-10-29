@@ -3,7 +3,7 @@
          <h2>Proyectos</h2>
          <img
           src="https://avatars.githubusercontent.com/u/5412050?v=4"
-          alt="Avatar"
+          alt="Victor Victor"
           width="58"
           loading="Lazy"
           class="image"
@@ -12,7 +12,13 @@
         <loading v-if="load" />
         <div id="cards" v-for="proyect in proyects" :key="proyect.id" >
        
-        <Card :name="proyect.name" :description="proyect.description" :author="proyect.owner.login" />
+        <Card 
+            :name="proyect.name" 
+            :description="proyect.description" 
+            :author="proyect.owner.login" 
+            :url="proyect.html_url"
+            :homepage="proyect.homepage"
+             />
         </div>
     </div>
 </template>
@@ -41,6 +47,7 @@ export default {
             const data = await res.json();
             this.proyects = data;
             this.load = false;
+            console.log(this.proyects);
         }
     }
 }
@@ -52,7 +59,9 @@ export default {
 #cards {
     display: flex;
     flex-wrap: wrap;
+
 }
+/*
 .container {
     margin: 1rem;
     border: solid 1px #eee; 
@@ -60,5 +69,6 @@ export default {
     box-shadow: 1px 1px 4px #333;
     text-align: center;
 }
+*/
 
 </style>

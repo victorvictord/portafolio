@@ -16,5 +16,22 @@
     "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorvictord/portafolio.git"
+  },
+  "keywords": [
+    "portafolio",
+    "pruebas",
+    "cursos"
+  ],
+  "author": "Victor Victor Dasilva Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorvictord/portafolio/issues"
+  },
+  "homepage": "https://github.com/victorvictord/portafolio#readme"
 }

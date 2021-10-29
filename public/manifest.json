@@ -1,0 +1,29 @@
+{
+    "name":"Portafolio",
+    "short_name":"Portafolio",
+    "description":"Contador App Vue es una aplicacion de ejemplo",
+    "background_color":"#333333",
+    "theme_color":"#41b883",
+    "start_url":"./umt_source=web_app_manifest",
+    "scope":"./",
+    "lang":"es-AR",
+    "display":"fullscreen",
+    "orientation":"portrait",
+    "icons":[
+        {
+            "src":"./img/fav_icon.png",
+            "sizes":"16x16",
+            "type":"image/png"
+        },
+        {
+            "src":"./img/settings.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        },
+        {
+            "src":"./img/sumary.png",
+            "sizes":"128x128",
+            "type":"image/png"
+        }
+    ]
+}
